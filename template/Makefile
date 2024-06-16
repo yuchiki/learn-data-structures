@@ -1,3 +1,4 @@
+SHELL= /bin/bash
 SOURCES = $(shell find src -name "*.c")
 
 .PHONY: default
@@ -8,7 +9,7 @@ dist/main: $(SOURCES)
 
 .PHONY: run
 run: dist/main
-	./dist/main
+	N=$(N) ./dist/main
 
 .PHONY: check-leaks
 check-leaks: dist/main
