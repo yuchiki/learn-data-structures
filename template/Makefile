@@ -9,7 +9,7 @@ dist/main: $(SOURCES)
 
 .PHONY: run
 run: dist/main
-	N=$(N) ./dist/main
+	./dist/main
 
 .PHONY: check-leaks
 check-leaks: dist/main
@@ -21,7 +21,7 @@ time: dist/main
 
 .PHONY: test-performance
 test-performance: dist/main
-	N=$(N) ./test-performance.sh
+	./test-performance.sh
 
 .PHONY: clean
 clean:

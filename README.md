@@ -7,3 +7,4 @@
 - コピーしたディレクトリの中で make する
 - あるいは、`make check-leaks` をしてメモリのマズい扱いを調べる
 - あるいは `make time` をして時間を計測する
+- あるいは `make test-performance EXPR='l(t)/n'` などをして、パフォーマンスを調べる
