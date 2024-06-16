@@ -19,6 +19,10 @@ check-leaks: dist/main
 time: dist/main
 	time ./dist/main
 
+.PHONY: test-performance
+test-performance: dist/main
+	N=$(N) ./test-performance.sh
+
 .PHONY: clean
 clean:
 	rm dist/main
