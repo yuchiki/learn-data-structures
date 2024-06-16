@@ -1,0 +1,11 @@
+version: 3
+
+tasks:
+  default:
+    desc: "Run default tasks"
+    cmds:
+      - task hello
+  hello:
+    desc: "Say hello"
+    cmds:
+      - echo "Hello from Task!"

@@ -4,7 +4,8 @@
 	"name": "Ubuntu",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
-		"ghcr.io/devcontainers/features/github-cli:1": {}
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/eitsupi/devcontainer-features/go-task:latest": {}
 	},
 	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y valgrind python3-pip gnupg2 time bc && pip3 install cpplint",
 	"customizations": {
